@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["sort-destructure-keys"],
+  "root": true,
+  "rules": {
+    "import/no-default-export": 2,
+    "import/order": [
+      2,
+      {
+        "newlines-between": "never",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "sort-imports": [2, { "ignoreDeclarationSort": true }]
+  }
+}
