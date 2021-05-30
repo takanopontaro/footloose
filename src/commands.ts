@@ -549,6 +549,7 @@ export async function mimetype(
 
 type IExecParameters = {
   command: string;
+  options?: childProcess.ExecOptions;
 };
 
 type IExecReturn = ICommandReturn & {
@@ -556,13 +557,15 @@ type IExecReturn = ICommandReturn & {
 };
 
 export async function exec(parameters: IExecParameters): Promise<IExecReturn> {
-  const { command } = parameters;
+  const { command, options } = parameters;
   try {
-    const { stderr, stdout } = await execChildProcess(command);
-    if (stderr) {
-      return createReturn(null, new Error(stderr));
+    const { stderr, stdout } = await execChildProcess(command, options);
+    const stdErr = stderr.toString();
+    const stdOut = stdout.toString();
+    if (stdErr) {
+      return createReturn(null, new Error(stdErr));
     }
-    return createReturn({ stdout });
+    return createReturn({ stdout: stdOut });
   } catch (e) {
     return createReturn(null, e);
   }
