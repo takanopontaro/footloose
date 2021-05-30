@@ -21,7 +21,7 @@ Footloose is made for keyboard users. It's possible to use a mouse but almost al
 ## Usage
 
 ```shell
-$ npx footloose -p 3500 -m
+$ npx footloose -p 3500
 ```
 
 Access `http://localhost:3500` by your browser then Footloose will be shown.
@@ -29,7 +29,7 @@ Access `http://localhost:3500` by your browser then Footloose will be shown.
 |option|description|
 |-|-|
 |p|Port number|
-|m|Whether to let Footloose get MIME types of binary files or not. It may slow the application depending on amount of files. You don't need this option if MIME types aren't necessary.|
+|m|Whether to let Footloose get MIME types of binary files or not. It may slow the application depending on sizes of files in the directory. You don't need this option if MIME types aren't necessary.|
 |c|User configuration (mentioned later)|
 
 ### Layout
@@ -151,7 +151,7 @@ nothing
 By default, it's not possible to change design, keyboard shortcuts or something. It will be available to specify user configuration directory when start the application.
 
 ```shell
-$ npx footloose -p 3500 -m -c /path/to/your-config-dir
+$ npx footloose -p 3500 -c /path/to/your-config-dir
 ```
 
 ### The default configuration
@@ -179,7 +179,7 @@ Bootstrap of Footloose. Functions for application settings and key maps must be 
 |getSettings|For settings of each frames|
 |getKeyMaps|For key maps. Executed multiple times.|
 
-`getSettings` is separated contexts below.
+`getSettings` is separated by contexts below.
 
 ### Application
 
@@ -237,7 +237,7 @@ Footloose はクライアント＆サーバーのアーキテクチャで作ら�
 ## 使い方
 
 ```shell
-$ npx footloose -p 3500 -m
+$ npx footloose -p 3500
 ```
 
 ブラウザーで `http://localhost:3500` にアクセスすると Footloose が表示されます。
@@ -245,8 +245,8 @@ $ npx footloose -p 3500 -m
 |オプション|説明|
 |-|-|
 |p|ポート番号|
-|m|バイナリファイルのMIMEタイプを取得するか否か。ファイル数によっては少し重くなるかもしれません。不要なら指定しないでOKです。|
-|c|ユーザーディレクトリー（後述）|
+|m|バイナリファイルのMIMEタイプを取得するか否か。ディレクトリー内の各ファイルのサイズによっては表示が重くなります。MIMEタイプが不要なら指定しないでOKです。|
+|c|ユーザーコンフィグ（後述）|
 
 ### レイアウト
 
@@ -367,7 +367,7 @@ Footloose はキーボードショートカットの管理に [Mousetrap](https:
 デフォルトでは、見た目はおろかショートカットすら変更できませんが、イジェクトという機能を使うとそれが可能になります。…と言ってもそういうコマンドがあるわけではなく &#x1f4a9; 、単に Footloose を立ち上げる時に設定ファイルのあるディレクトリーを指定するだけです。
 
 ```shell
-$ npx footloose -p 3500 -m -c /path/to/your-config-dir
+$ npx footloose -p 3500 -c /path/to/your-config-dir
 ```
 
 ### デフォルトのコンフィグ
