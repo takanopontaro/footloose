@@ -1,7 +1,7 @@
 {
   "name": "footloose",
   "description": "The dual-pane visual file manager made by React.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "takanopontaro",
   "bin": {
     "footloose": "./dist/server.js"
@@ -14,8 +14,8 @@
     "chokidar": "^3.5.1",
     "express": "^4.17.1",
     "file-type": "^16.5.0",
-    "footloose-client": "^0.0.3",
-    "footloose-config": "^0.0.3",
+    "footloose-client": "^0.0.4",
+    "footloose-config": "^0.0.4",
     "globby": "^11.0.3",
     "gunzip-maybe": "^1.4.2",
     "minimist": "^1.2.5",
