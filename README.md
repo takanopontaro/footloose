@@ -430,6 +430,11 @@ Footloose の立ち上げ時に実行されるファイル。アプリケーシ�
 
 現在ドッグフーディングしながら随時更新中です。ドキュメントがまったく間に合っていませんが、コンフィグの書式は TypeScript のおかげでだいぶ分かるようになっています。
 
+## 紹介記事
+
+- [Qiita](https://qiita.com/takanopontaro/items/58a4474e88f439330ab5)
+- [Zenn](https://zenn.dev/takanopontaro/articles/c4c86d14e6aab7)
+
 ## ライセンス
 
 MIT © takanopontaro
