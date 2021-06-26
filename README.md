@@ -437,4 +437,4 @@ Footloose の立ち上げ時に実行されるファイル。アプリケーシ�
 
 ## ライセンス
 
-MIT © takanopontaro
+MIT © [takanopontaro](https://kin-can.firebaseapp.com/)
